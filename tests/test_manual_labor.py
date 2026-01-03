@@ -1,5 +1,5 @@
 """
-Unit tests for Auto Clicker - Testing core logic without GUI dependencies
+Unit tests for Manual Labor - Testing core logic without GUI dependencies
 """
 
 import pytest

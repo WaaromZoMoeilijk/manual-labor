@@ -1,6 +1,8 @@
-# Auto Clicker
+# Manual Labor
 
 A feature-rich auto clicker with a graphical interface. Built as a learning project for Python programming concepts.
+
+*Because clicking is hard work.*
 
 ## Features
 
@@ -32,7 +34,7 @@ Download the latest release from the [Releases](../../releases) page.
 
 ## Usage
 
-1. Download `AutoClicker.exe` from Releases
+1. Download `ManualLabor.exe` from Releases
 2. Run the application
 3. Configure your settings:
    - Adjust CPS and timing variation
@@ -51,20 +53,20 @@ Download the latest release from the [Releases](../../releases) page.
 
 ```bash
 # Clone the repository
-git clone https://github.com/WaaromZoMoeilijk/auto-clicker.git
-cd auto-clicker
+git clone https://github.com/WaaromZoMoeilijk/manual-labor.git
+cd manual-labor
 
 # Install dependencies
 pip install -r requirements.txt
 
 # Run directly
-python src/auto_clicker.py
+python src/manual_labor.py
 
 # Run tests
 pytest tests/ -v
 
 # Build executable
-pyinstaller --onefile --windowed --name AutoClicker src/auto_clicker.py
+pyinstaller --onefile --windowed --name ManualLabor src/manual_labor.py
 ```
 
 The executable will be in the `dist/` folder.

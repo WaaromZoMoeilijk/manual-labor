@@ -1,5 +1,5 @@
 """
-Auto Clicker - A feature-rich auto clicker with GUI
+Manual Labor - A feature-rich auto clicker with GUI
 Features: Adjustable CPS, multiple click modes, hotkeys, themes, and more
 """
 
@@ -14,7 +14,7 @@ from pynput.mouse import Button, Controller as MouseController
 from pynput.keyboard import Key, Listener as KeyboardListener, KeyCode
 
 # Settings file path
-SETTINGS_FILE = os.path.join(os.path.expanduser("~"), ".auto_clicker_settings.json")
+SETTINGS_FILE = os.path.join(os.path.expanduser("~"), ".manual_labor_settings.json")
 
 # Available hotkeys
 HOTKEY_OPTIONS = {
@@ -29,7 +29,7 @@ HOTKEY_OPTIONS = {
 class AutoClicker:
     def __init__(self, root):
         self.root = root
-        self.root.title("Auto Clicker")
+        self.root.title("Manual Labor")
         self.root.geometry("350x580")
         self.root.resizable(False, False)
 
@@ -106,7 +106,7 @@ class AutoClicker:
         main_frame.pack(fill=tk.BOTH, expand=True)
 
         # Title
-        ttk.Label(main_frame, text="Auto Clicker", style="Header.TLabel").pack(pady=(0, 10))
+        ttk.Label(main_frame, text="Manual Labor", style="Header.TLabel").pack(pady=(0, 10))
 
         # === CPS Section ===
         cps_frame = ttk.LabelFrame(main_frame, text="Speed", padding="5")

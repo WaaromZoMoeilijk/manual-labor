@@ -44,13 +44,13 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Build executable
-        run: pyinstaller --onefile --windowed --name AutoClicker src/auto_clicker.py
+        run: pyinstaller --onefile --windowed --name ManualLabor src/manual_labor.py
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: AutoClicker
-          path: dist/AutoClicker.exe
+          name: ManualLabor
+          path: dist/ManualLabor.exe
 
   release:
     needs: build
@@ -63,10 +63,10 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
-          name: AutoClicker
+          name: ManualLabor
 
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
-          files: AutoClicker.exe
+          files: ManualLabor.exe
           generate_release_notes: true
